@@ -41,7 +41,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/', express.static(path.join(__dirname, 'routes')));
 
-//app.use('/auth',require("./routes/auth.js"));
+//app.use('/',require("./routes/index.js"));
 app.use('/signup',require("./routes/signup.js"));
 app.use('/login',require("./routes/login.js"));
 /*app.use('/logout',require("./routes/logout.js"));*/
